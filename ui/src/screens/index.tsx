@@ -5,8 +5,8 @@ import Pokemon from './pokemon'
 
 const Screens: React.FC<{ clickLink: Function }> = ({ clickLink }) => (
   <Router style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-    <Home path="/" />
-    <Pokemon clickLink={clickLink} path="/pokemon/*" />
+    <Pokemon clickLink={clickLink} path="/" />
+    <ID clickLink={clickLink} path=":id" />
   </Router>
 )
 
